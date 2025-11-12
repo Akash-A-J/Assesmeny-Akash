@@ -15,7 +15,7 @@ public class ExcelUtility {
 		fle=new FileInputStream("C:\\SDET\\SeliniumAssesment\\Automation\\AssesmentAkash\\src\\test\\resources\\logincredentials.xlsx");
 		workbook=new XSSFWorkbook(fle);
 		sheet=workbook.getSheetAt(0);
-		return readExcel(0,0);
+		return sheet.getRow(rowC).getCell(colC).getStringCellValue();
 			
 	}
 
